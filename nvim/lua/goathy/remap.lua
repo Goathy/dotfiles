@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 -- Explorer keymap
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
