@@ -10,9 +10,6 @@ export VISUAL="$(which nvim)"
 # shell
 export SHELL="$(which zsh)"
 
-# zsh cache
-export _ZCACHEDIR="$XDG_CACHE_HOME/zsh"
-
 # history
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
