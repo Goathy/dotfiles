@@ -35,3 +35,6 @@ export NODE_REPL_HISTORY="$NODE_DIR/history"
 export NODE_REPL_HISTORY_SIZE=10000
 export NODE_REPL_MODE="strict"
 
+# npm
+export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
+
