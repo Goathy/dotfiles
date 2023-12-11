@@ -9,3 +9,5 @@ end
 vim.o.relativenumber = true
 vim.o.number = true
 vim.o.colorcolumn = "80"
+vim.g.mapleader=" "
+
