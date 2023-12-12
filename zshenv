@@ -12,6 +12,7 @@ export SHELL="$(which zsh)"
 
 # history
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export HISTFILEFORMAT="[%F %T]"
 
 export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
