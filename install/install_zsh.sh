@@ -8,8 +8,6 @@ install_zsh() {
 		exit 1
 	fi
 
-	mkdir -p "$ZDOTDIR"
-
 	ln -s "$PWD/zshenv" "$HOME/.zshenv"
 	ln -S "$PWD/zsh" "$ZDOTDIR"
 }
