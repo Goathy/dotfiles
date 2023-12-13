@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-install_n() {
+instll_n() {
 	REPOSITORY="$HOME/n"
 
-	git clone --depth 1 https://github.com/tj/n.git $REPOSITORY && \
-		cd $REPOSITORY && \
-		make install && \
-		rm -Rf $REPOSITORY || fallback
+	git clone --depth 1 https://github.com/tj/n.git $REPOSITORY
 
-	}
+	cd $REPOSITORY
 
-	falllback() {
-		rm -Rf $REPOSITORY && \
-			echo "# Error: unable to install n node package manager" && \
-			exit 1
-		}
+	if [ "$(id -u)" -eq 0 ]; then
+		make install
+	else
+		sudo make install
+	fi
+
+	rm -Rf $REPOSITORY
+}
 
