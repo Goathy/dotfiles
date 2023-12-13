@@ -10,11 +10,13 @@ export VISUAL="$(which nvim)"
 # shell
 export SHELL="$(which zsh)"
 
+# zsh
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
 # history
-export ZDOTDIR="$XDG_STATE_HOME/zsh"
 export HISTFILEFORMAT="[%F %T]"
 
-export HISTFILE="$ZDOTDIR/.zhistory"
+export HISTFILE="$XDG_STATE_HOME/zsh_history"
 export HISTSIZE=10000
 export SIZEHIST=10000
 
