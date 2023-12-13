@@ -6,6 +6,7 @@ install() {
 
 	source "$CWD/zshenv"
 
+	source "$CWD/install/pre_install.sh"
 	source "$CWD/install/install_xdg.sh"; install_xdg
 	source "$CWD/install/install_n.sh"; install_n
 	source "$CWD/install/install_zsh.sh"; install_zsh $CWD

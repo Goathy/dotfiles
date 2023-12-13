@@ -1,21 +1,6 @@
 #!/usr/bin/env bash
 
 install_n() {
-	if ! command -v git&> /dev/null; then
-		echo "Error: git is not installed."
-		exit 1
-	fi
-
-	if ! command -v make&> /dev/null; then
-		echo "Error: make is not installed."
-		exit 1
-	fi
-
-	if ! command -v curl&> /dev/null; then
-		echo "Error: curl is not installed."
-		exit 1
-	fi
-
 	REPOSITORY="$HOME/n"
 
 	git clone --depth 1 https://github.com/tj/n.git $REPOSITORY && \
