@@ -20,3 +20,8 @@ if ! command -v zsh&> /dev/null; then
 	exit 1
 fi
 
+if ! command -v tmux&> /dev/null; then
+	echo "Error: tmux is not installed."
+	exit 1
+fi
+

@@ -10,6 +10,8 @@ install() {
 	source "$CWD/install/install_xdg.sh"; install_xdg
 	source "$CWD/install/install_n.sh"; install_n
 	source "$CWD/install/install_zsh.sh"; install_zsh $CWD
+	source "$CWD/install/install_tmux.sh"; install_tmux $CWD
 }
 
 install
+
