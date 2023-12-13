@@ -11,4 +11,6 @@ install_zsh() {
 	mkdir -p "$ZDOTDIR"
 
 	ln -s "$PWD/zshenv" "$HOME/.zshenv"
+	ln -S "$PWD/zsh" "$ZDOTDIR"
 }
+
