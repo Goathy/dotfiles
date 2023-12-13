@@ -1,7 +1,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
-export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
-export XDG_STATE_HOME="$XDG_CONFIG_HOME/local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
 
 # editor
 export EDITOR="$(which nvim)"
@@ -11,7 +11,7 @@ export VISUAL="$(which nvim)"
 export SHELL="$(which zsh)"
 
 # history
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export ZDOTDIR="$XDG_STATE_HOME/zsh"
 export HISTFILEFORMAT="[%F %T]"
 
 export HISTFILE="$ZDOTDIR/.zhistory"
@@ -25,10 +25,10 @@ export SSH_AUTH_SOCK="$XDG_CONFIG_HOME/1password-agent.sock"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
 # n node version manager 
-export N_PREFIX="$XDG_DATA_HOME/n"
+export N_PREFIX="$XDG_DATA_HOME"
 
 # path
-export PATH="$N_PREFIX/bin:$PATH"
+export PATH="$N_PREFIX:$PATH"
 
 # node
 export NODE_DIR="$XDG_DATA_HOME/node"
