@@ -26,9 +26,10 @@ export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
 # n node version manager 
 export N_PREFIX="$XDG_DATA_HOME"
+NODE_PATH="$N_PREFIX/bin"
 
 # path
-export PATH="$N_PREFIX:$PATH"
+export PATH="$NODE_PATH:$PATH"
 
 # node
 export NODE_DIR="$XDG_DATA_HOME/node"
