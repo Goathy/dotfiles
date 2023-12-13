@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-source "./zshenv"
+PWD=$(realpath $0)
+CWD=$(dirname $PWD)
 
-source "./install/install_xdg.sh"
-source "./install/install_n.sh"
+source "$CWD/zshenv"
+
+source "$CWD/install/install_xdg.sh"
+source "$CWD/install/install_n.sh"
