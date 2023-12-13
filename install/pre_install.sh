@@ -25,3 +25,8 @@ if ! command -v tmux&> /dev/null; then
 	exit 1
 fi
 
+if ! command -v nvim&> /dev/null; then
+	echo "Error: nvim is not installed."
+	exit 1
+fi
+

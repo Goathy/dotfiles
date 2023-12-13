@@ -12,6 +12,7 @@ install() {
 	source "$CWD/install/install_zsh.sh"; install_zsh $CWD
 	source "$CWD/install/install_tmux.sh"; install_tmux $CWD
 	source "$CWD/install/install_git.sh"; install_git
+	source "$CWD/install/install_nvim.sh"; install_nvim $CWD
 }
 
 install
