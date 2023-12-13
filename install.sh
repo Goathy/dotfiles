@@ -19,4 +19,5 @@ is_sudo() {
 	fi 
 }
 
+is_sudo
 install
