@@ -9,6 +9,6 @@ install_zsh() {
 	fi
 
 	ln -s "$PWD/zshenv" "$HOME/.zshenv"
-	ln -S "$PWD/zsh" "$ZDOTDIR"
+	ln -s "$PWD/zsh" "$ZDOTDIR"
 }
 
