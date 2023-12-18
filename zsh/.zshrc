@@ -1,6 +1,7 @@
 # aliases
 source "$ZDOTDIR/aliases/vim.sh"
 source "$ZDOTDIR/aliases/tmux.sh"
+source "$ZDOTDIR/aliases/wsl.sh"
 
 # history
 setopt INC_APPEND_HISTORY
