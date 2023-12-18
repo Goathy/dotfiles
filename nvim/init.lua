@@ -3,6 +3,15 @@ local NORMAL = "n"
 local INSERT = "i"
 local VISUAL = "v"
 
+-- DISABLE KEYS --
+function noop () end
+
+local modes = { INSERT, NORMAL, VISUAL }
+local keys = { "<Up>", "<Down>", "<Left>", "<Right>", "<BS>" }
+for _, key in ipairs(keys) do
+    vim.keymap.set(modes, key, noop)
+end
+
 -- OPTIONS --
 vim.o.scrolloff = 8
 vim.o.relativenumber = true
@@ -21,17 +30,4 @@ local LEADER = " "
 
 vim.g.mapleader = LEADER
 vim.api.nvim_set_keymap(NORMAL, '<leader>pv', ':Vex<CR>', { noremap = true })
-
--- DISABLE KEYS --
-function noop () end
-
-function disable_keys ()
-    local modes = { INSERT, INSERT, VISUAL }
-    local keys = { "<Up>", "<Down>", "<Left>", "<Right>", "<BS>" }
-    for _, key in ipairs(keys) do
-        vim.keymap.set(modes, key, noop)
-    end
-end
-
-disable_keys()
 
