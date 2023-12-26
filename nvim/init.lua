@@ -30,6 +30,6 @@ vim.opt.termguicolors = true
 local LEADER = " "
 
 vim.g.mapleader = LEADER
-vim.api.nvim_set_keymap(NORMAL, '<leader>ex', ':Ex<CR>', { noremap = true })
+vim.api.nvim_set_keymap(NORMAL, '<leader>pe', ':Ex<CR>', { noremap = true })
 vim.api.nvim_set_keymap(NORMAL, '<leader><CR>', ':so $XDG_CONFIG_HOME/nvim/init.lua<CR>', { noremap = true, silent = true })
 
