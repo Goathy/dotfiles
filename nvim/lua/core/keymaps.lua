@@ -1,13 +1,10 @@
--- MODES --
-local NORMAL = "n"
-local INSERT = "i"
-local VISUAL = "v"
-
+local mode = require('core.mode')
+ 
 -- DISABLE KEYS --
 function noop () end
 
-local modes = { INSERT, NORMAL, VISUAL }
-local keys = { "<Up>", "<Down>", "<Left>", "<Right>", "<BS>" }
+local modes = { mode.INSERT, mode.NORMAL, mode.VISUAL }
+local keys = { '<Up>', '<Down>', '<Left>', '<Right>', '<BS>' }
 for _, key in ipairs(keys) do
     vim.keymap.set(modes, key, noop)
 end
@@ -22,9 +19,9 @@ vim.o.smartindent = true
 --
 
 -- CUSTOM SHORTCUTS --
-local LEADER = " "
+local LEADER = ' '
 
 vim.g.mapleader = LEADER
-vim.api.nvim_set_keymap(NORMAL, '<leader>pe', ':Ex<CR>', { noremap = true })
-vim.api.nvim_set_keymap(NORMAL, '<leader><CR>', ':so $XDG_CONFIG_HOME/nvim/init.lua<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap(mode.NORMAL, '<leader>pe', ':Ex<CR>', { noremap = true })
+vim.api.nvim_set_keymap(mode.NORMAL, '<leader><CR>', ':so $XDG_CONFIG_HOME/nvim/init.lua<CR>', { noremap = true, silent = true })
 
