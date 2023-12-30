@@ -1,7 +1,7 @@
-local ensure_installed = { 'vim', 'vimdoc', 'query', 'javascript', 'typescript', 'lua', 'html', 'sql', 'python', 'json' }
+local servers = { 'vim', 'vimdoc', 'query', 'javascript', 'typescript', 'lua', 'html', 'sql', 'python', 'json' }
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = ensure_installed,
+  ensure_installed = servers,
   sync_install = false,
   auto_install = true,
   highlight = {

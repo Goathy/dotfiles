@@ -1,7 +1,7 @@
 local lsp_zero = require('lsp-zero')
 local mode = require('core.mode')
 
-local lsp_servers = { 'tsserver', 'lua_ls', 'vimls', 'jsonls', 'html', 'sqlls', 'pyright' }
+local servers = { 'tsserver', 'lua_ls', 'vimls', 'jsonls', 'html', 'sqlls', 'pyright' }
 
 lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
@@ -20,7 +20,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = lsp_servers,
+  ensure_installed = servers,
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
