@@ -1,17 +1,18 @@
 local servers = { 
 	"lua",
 	"vim",
-	"vimdoc", 
-	"query", 
-	"sql", 
-	"javascript", 
-	"typescript", 
-	"python", 
-	"html", 
-	"css", 
+	"vimdoc",
+	"query",
+	"sql",
+	"javascript",
+	"typescript",
+	"python",
+	"html",
+	"css",
 	"bash",
 	"json",
-	"jsonc"
+	"jsonc",
+  "gitignore",
 }
 
 require("nvim-treesitter.configs").setup {

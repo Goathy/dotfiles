@@ -1,10 +1,10 @@
-local servers = { 
+local servers = {
 	"lua_ls",
-	"sqlls", 
-	"tsserver", 
-	"pyright", 
-	"html", 
-	"cssls", 
+	"sqlls",
+	"tsserver",
+	"pyright",
+	"html",
+	"cssls",
 	"bashls",
 	"jsonls",
 }
