@@ -6,5 +6,6 @@ local discipline = require("goathy.discipline")
 discipline.cowboy()
 discipline.navigation()
 
-require("goathy.packer")
+require("goathy.filetype")
+require("goathy.code_actions")
 

@@ -32,4 +32,3 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 require("goathy.clipboard").setup()
-
