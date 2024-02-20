@@ -27,7 +27,8 @@ fpath=("$ZDOTDIR/prompt" $fpath)
 autoload -U simple_prompt.sh; simple_prompt.sh
 
 # completion
-autoload -U compinit; compinit
+autoload -Uz compinit
+compinit -d ~/.config/zsh/.zcompdump
 
 # history search
 bindkey '^R' history-incremental-search-backward

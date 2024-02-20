@@ -1,7 +1,11 @@
+export SHELL_SESSIONS_DISABLE=1
+
+# xdg dirs
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
+
 export DOT_LOCAL_BIN="$HOME/.local/bin"
 
 # editor
@@ -15,11 +19,13 @@ export SHELL="$(which zsh)"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # history
+export HISTFILE="$ZDOTDIR/.zsh_history"
 export HISTFILEFORMAT="[%F %T]"
-
-export HISTFILE="$XDG_STATE_HOME/zsh_history"
-export HISTSIZE=10000
-export SIZEHIST=10000
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # ssh bridge
 export SSH_AUTH_SOCK="$XDG_CONFIG_HOME/1password-agent.sock"

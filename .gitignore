@@ -1,4 +1,5 @@
 nvim/plugin
 tmux/plugins
 zsh/.zcompdump
+zsh/.zsh_history
 
