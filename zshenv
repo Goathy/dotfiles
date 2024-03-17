@@ -40,6 +40,7 @@ NODE_PATH="$N_PREFIX/bin"
 # path
 export PATH="$NODE_PATH:$PATH"
 export PATH="$DOT_LOCAL_BIN:$PATH"
+export PATH=$PATH:/usr/local/go/bin
 
 # node
 export NODE_DIR="$XDG_DATA_HOME/node"
