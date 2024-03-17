@@ -22,13 +22,6 @@ setopt EXTENDED_GLOB
 alias d="dirs -v"
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
-# completion
-# autoload -Uz compinit
-# compinit -d ~/.config/zsh/.zcompdump
-
-# history search
-bindkey '^R' history-incremental-search-backward
-
 # ohmyzsh
 
 # Uncomment the following line if you want to change the command execution time
