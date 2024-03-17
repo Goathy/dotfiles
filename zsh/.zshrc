@@ -22,10 +22,6 @@ setopt EXTENDED_GLOB
 alias d="dirs -v"
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
-# prompt
-fpath=("$ZDOTDIR/prompt" $fpath)
-autoload -U simple_prompt.sh; simple_prompt.sh
-
 # completion
 # autoload -Uz compinit
 # compinit -d ~/.config/zsh/.zcompdump
@@ -42,6 +38,12 @@ bindkey '^R' history-incremental-search-backward
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="goathy"
 
 plugins=(docker)
 
