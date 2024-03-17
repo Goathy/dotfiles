@@ -15,8 +15,9 @@ export VISUAL="$(which nvim)"
 # shell
 export SHELL="$(which zsh)"
 
-# zsh
+# zsh & ohmyzsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export ZSH="$ZDOTDIR/ohmyzsh"
 
 # history
 export HISTFILE="$ZDOTDIR/.zsh_history"
